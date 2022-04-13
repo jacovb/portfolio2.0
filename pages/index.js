@@ -1,10 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="flex items-center flex-grow">
       <Head>
         <title>Portfolio - Jaco van Biljon</title>
         <meta
@@ -15,9 +13,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className="min-h-screen w-screen flex flex-row items-center">
-          Jaco van Biljon - Portfolio
-        </div>
+        <div>Jaco van Biljon - Portfolio</div>
       </main>
     </div>
   );
