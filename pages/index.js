@@ -12,11 +12,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      {/* <main>
         <div className="flex flex-wrap md:flex-nowrap">
           Building Unique Experiences
         </div>
-      </main>
+      </main> */}
     </div>
   );
 }
