@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="flex items-center flex-grow">
+    <div className="container mt-16 flex justify-between items-center mx-auto px-8 mx-auto md:px-14 lg:px-24 w-full">
       <Head>
         <title>Portfolio - Jaco van Biljon</title>
         <meta
@@ -13,7 +13,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <div>Jaco van Biljon - Portfolio</div>
+        <div className="flex flex-wrap md:flex-nowrap">
+          Building Unique Experiences
+        </div>
       </main>
     </div>
   );
