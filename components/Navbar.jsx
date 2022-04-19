@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="container flex justify-between items-center py-6 px-8 mx-auto md:px-14 lg:px-24 w-full">
+    <nav className="container fixed bg-green-700 flex justify-between items-center py-6 px-8 mx-auto md:px-14 lg:px-24 w-full">
       <div className="text-lg font-bold">Jaco.vanBiljon</div>
       <div className="hidden md:flex space-x-12 items-center">
         <Link href="/" className="text-selected">
