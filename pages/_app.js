@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../styles/globals.css";
 import Navbar from "../components/Navbar";
-import NavDots from "../components/NavDots";
 
 function MyApp({ Component, pageProps }) {
   const [pageNum, setPageNum] = useState("page1");
@@ -31,13 +30,12 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div
-      className="flex flex-col bg-red-500 text-white font-poppins max-h-screen overflow-y-scroll snap-y snap-mandatory"
+      className="flex flex-col bg-red-500 text-white font-poppins max-h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth"
       onScroll={handleScroll}
     >
       <Navbar />
-      <NavDots pageNum={pageNum} />
       <div className="container bg-green-500 flex justify-between items-center mx-auto px-8 mx-auto md:px-14 lg:px-24 w-full">
-        <Component {...pageProps} />
+        <Component {...pageProps} pageNum={pageNum} />
       </div>
     </div>
   );

@@ -6,12 +6,12 @@ export default function Navbar() {
     <nav className="container fixed flex justify-between items-center py-6 px-8 md:px-14 lg:px-24 w-screen max-w-full">
       <div className="text-lg font-bold">Jaco.vanBiljon</div>
       <div className="hidden md:flex space-x-12 items-center">
-        <Link href="/" className="text-selected">
+        <Link href="#home" className="text-selected">
           Home
         </Link>
-        <Link href="/about">About</Link>
-        <Link href="/portfolio">Portfolio</Link>
-        <Link href="/contact">
+        <Link href="#about">About</Link>
+        <Link href="#portfolio">Portfolio</Link>
+        <Link href="#contact">
           <button className="px-6 py-2 bg-theme font-bold">Contact</button>
         </Link>
       </div>

@@ -3,8 +3,9 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
+import NavDots from "../components/NavDots";
 
-export default function Home() {
+export default function Home({ pageNum }) {
   return (
     <div>
       <Head>
@@ -16,6 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <NavDots pageNum={pageNum} />
       <Hero />
       <About />
       <Portfolio />
