@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
       onScroll={handleScroll}
     >
       <Navbar />
-      <div className="container bg-green-500 flex justify-between items-center mx-auto px-8 mx-auto md:px-14 lg:px-24 w-full">
+      <div className="container bg-green-500 flex justify-center items-center mx-auto px-8 mx-auto md:px-14 lg:px-24 w-full">
         <Component {...pageProps} pageNum={pageNum} />
       </div>
     </div>

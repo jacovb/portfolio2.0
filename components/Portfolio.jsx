@@ -9,7 +9,7 @@ export default function Portfolio() {
           Portfolio
         </h2>
         <p className="section-paragraph">Projects I've been working on</p>
-        <div className="flex justify-between w-full ">
+        <div className="flex flex-col md:flex-row justify-between w-full ">
           <Link href="/calculator">
             <a>
               <Project />
