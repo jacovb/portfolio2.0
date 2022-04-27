@@ -12,17 +12,17 @@ export default function Portfolio() {
         <div className="flex flex-col md:flex-row justify-between w-full ">
           <Link href="/calculator">
             <a>
-              <Project />
+              <Project title="Mortgage Calculator" description="Calculate Monthly Payments" link="Demo" />
             </a>
           </Link>
           <Link href="/timesheet">
             <a>
-              <Project />
+              <Project title="Punch-Card" description="Timesheet Harvester" link="Demo" />
             </a>
           </Link>
           <Link href="/barbershop">
             <a>
-              <Project />
+              <Project title="The London Barber Co." description="Book and pay for your Barber appointments online" link="Demo" />
             </a>
           </Link>
         </div>
