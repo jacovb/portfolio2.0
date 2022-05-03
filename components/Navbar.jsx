@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import NavModal from "./NavModal";
 
 export default function Navbar() {
+  const [isNavModalOpen, setIsNavModalOpen] = useState(false)
+
+  function closeModal() {
+    setIsNavModalOpen(false)
+  }
+
+  function openModal() {
+    setIsNavModalOpen(true)
+  }
+
+  
   return (
     <nav className="container fixed flex justify-between items-center py-6 px-8 md:px-14 lg:px-24 w-screen max-w-full">
       <div className="text-lg font-bold">
@@ -19,7 +31,7 @@ export default function Navbar() {
           <button className="px-6 py-2 bg-theme font-bold">Contact</button>
         </Link>
       </div>
-      <div className="md:hidden">
+      <button className="md:hidden" onClick={openModal}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
@@ -34,7 +46,8 @@ export default function Navbar() {
             d="M4 6h16M4 12h16M4 18h16"
           />
         </svg>
-      </div>
+      </button>
+      <NavModal isNavModalOpen={isNavModalOpen} closeModal={closeModal} />
     </nav>
   );
 }
