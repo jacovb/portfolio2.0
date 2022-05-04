@@ -20,7 +20,7 @@ export default function NavModal({isNavModalOpen, closeModal}) {
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
-            <div className="flex min-h-full items-center justify-center p-4 text-center">
+            <div className="flex min-h-full items-start justify-center p-4 pt-16 text-center">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -31,25 +31,19 @@ export default function NavModal({isNavModalOpen, closeModal}) {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="w-full max-w-xs transform overflow-hidden rounded-lg bg-white p-6 text-left align-middle shadow-xl transition-all">
-                  <Dialog.Title
-                    as="h3"
-                    className="flex justify-start text-lg font-medium leading-6 text-gray-900"
-                  >
-                    Menu
-                  </Dialog.Title>
                   <nav>
-                    <div className="flex flex-col my-6">
+                    <div className="flex flex-col my-3">
                       <Link href="/#home">
-                        <button onClick={closeModal} className="py-2 rounded-lg text-lg font-bold hover:bg-gray-300">Home</button>
+                        <button onClick={closeModal} className="py-3 rounded-lg text-lg font-bold hover:bg-gray-300">Home</button>
                       </Link>
                       <Link href="/#about">
-                        <button onClick={closeModal} className="py-2 rounded-lg text-lg font-bold hover:bg-gray-300">About</button>
+                        <button onClick={closeModal} className="py-3 rounded-lg text-lg font-bold hover:bg-gray-300">About</button>
                       </Link>
-                      <Link href="/#portfolio">
-                        <button onClick={closeModal} className="py-2 rounded-lg text-lg font-bold hover:bg-gray-300">Portfolio</button>
+                      <Link href="/#projects">
+                        <button onClick={closeModal} className="py-3 rounded-lg text-lg font-bold hover:bg-gray-300">Projects</button>
                       </Link>
                       <Link href="/#contact">
-                        <button onClick={closeModal} className="py-2 rounded-lg text-lg font-bold hover:bg-gray-300">Contact</button>
+                        <button onClick={closeModal} className="py-3 rounded-lg text-lg font-bold hover:bg-gray-300">Contact</button>
                       </Link>
                     </div>
                   </nav>

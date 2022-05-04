@@ -26,9 +26,9 @@ export default function Navbar() {
           Home
         </Link>
         <Link href="/#about">About</Link>
-        <Link href="/#portfolio">Portfolio</Link>
+        <Link href="/#projects">Projects</Link>
         <Link href="/#contact">
-          <button className="px-6 py-2 bg-theme font-bold">Contact</button>
+          <button className="px-6 py-2 bg-theme text-white font-bold">Contact</button>
         </Link>
       </div>
       <button className="md:hidden" onClick={openModal}>

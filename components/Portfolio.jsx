@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Portfolio() {
   return (
-    <div className="container min-h-screen snap-start bg-purple-500 flex justify-between items-center mx-auto px-4 md:px-8 lg:px-12 w-full">
-      <section id="portfolio" className="w-full">
+    <div className="container min-h-screen snap-start flex justify-between items-center mx-auto px-4 md:px-8 lg:px-12 w-full">
+      <section id="projects" className="w-full">
         <h2 className="secondary-title">
-          Portfolio
+          Projects
         </h2>
         <p className="section-paragraph">Projects I've been working on</p>
         <div className="flex flex-col items-center md:flex-row md:justify-between w-full ">
