@@ -10,7 +10,7 @@ export default function NavDots({ pageNum }) {
             <a href="#about" className={`${(pageNum == "page2" ? "selected-circle" : "")} nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body`}>
               <span className="bg-black text-white px-2 py-1 rounded-md ml-10 opacity-0">About</span>
             </a>
-            <a href="#portfolio" className={`${(pageNum == "page3" ? "selected-circle" : "")} nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body`}>
+            <a href="#projects" className={`${(pageNum == "page3" ? "selected-circle" : "")} nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body`}>
               <span className="bg-black text-white px-2 py-1 rounded-md ml-10 opacity-0">Projects</span>
             </a>
             <a href="#contact" className={`${(pageNum == "page4" ? "selected-circle" : "")} nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body`}>

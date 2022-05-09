@@ -15,8 +15,8 @@ export default function Navbar() {
 
   
   return (
-    <nav className="container fixed flex justify-between items-center py-6 px-8 md:px-14 lg:px-24 w-screen max-w-full">
-      <div className="text-lg font-bold">
+    <nav className="container fixed flex justify-end md:justify-between items-center py-6 px-8 md:px-14 lg:px-24 w-screen max-w-full">
+      <div className="hidden md:block text-lg font-bold">
         <Link href="/#home">
           Jaco.vanBiljon
         </Link>
