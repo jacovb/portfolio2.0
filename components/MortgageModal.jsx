@@ -2,10 +2,12 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import Image from 'next/image'
 import PaymentCalculator from "../images/PaymentCalculator.gif"
+import Tooltip from './Tooltip'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faJs, faReact, faHtml5, faCss3} from "@fortawesome/free-brands-svg-icons";
 
 export default function MortgageModal({isMortgageModalOpen, setIsMortgageModalOpen}) {
   function closeMortgageModal() {
@@ -53,14 +55,29 @@ export default function MortgageModal({isMortgageModalOpen, setIsMortgageModalOp
                   </div>
 
                   <div className="mt-2 flex w-full justify-between">
-                    <div className="w-full bg-gray-300 mr-1.5 h-10 rounded cursor-pointer hover:bg-gray-400 focus:outline-none">
-                      <FontAwesomeIcon icon={faEye} />
-                      <a href="https://payment-calculator120.netlify.app/" target="_blank" className="w-full h-full flex justify-center items-center">Demo</a>
-                    </div>
-                    <div className="w-full bg-gray-300 ml-1.5 h-10 rounded cursor-pointer hover:bg-gray-400 focus:outline-none">
-                      <FontAwesomeIcon icon={faGithub} />
-                      <a href="https://github.com/jacovb/payment-calculator" target="_blank" className="w-full h-full flex justify-center items-center">Code</a>
-                    </div>
+                    <a href="https://payment-calculator120.netlify.app/" target="_blank" className="w-full flex justify-center items-center bg-gray-300 mr-1.5 h-10 rounded cursor-pointer hover:bg-gray-400 focus:outline-none">
+                      <FontAwesomeIcon icon={faEye} className="h-5" />
+                      <div className="ml-2 text-lg font-semibold">DEMO</div>
+                    </a>
+                    <a href="https://github.com/jacovb/payment-calculator" target="_blank" className="w-full flex justify-center items-center bg-gray-300 ml-1.5 h-10 rounded cursor-pointer hover:bg-gray-400 focus:outline-none">
+                      <FontAwesomeIcon icon={faGithub} className="h-5" />
+                      <div className="ml-2 text-lg font-semibold">CODE</div>
+                    </a>
+                  </div>
+                  
+                  <div className="w-2/3 md:w-1/2 mx-auto h-10 mt-4 flex flex-row justify-around">
+                    <Tooltip title="HTML">
+                      <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}} className="h-8"/>
+                    </Tooltip>
+                    <Tooltip title="CSS">
+                      <FontAwesomeIcon icon={faCss3} style={{color: "#2965f1"}} className="h-8"/>
+                    </Tooltip>
+                    <Tooltip title="Javascript">
+                      <FontAwesomeIcon icon={faJs} style={{color: "#F0DB4F"}} className="h-8"/>
+                    </Tooltip>
+                    <Tooltip title="React">
+                      <FontAwesomeIcon icon={faReact} style={{color: "#61DBFB"}} className="h-8"/>
+                    </Tooltip>
                   </div>
                   
                   <div className="mt-4">
