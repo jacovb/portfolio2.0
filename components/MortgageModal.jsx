@@ -43,17 +43,26 @@ export default function MortgageModal({isMortgageModalOpen, setIsMortgageModalOp
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="relative w-full max-w-2xl transform overflow-hidden rounded-xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-2xl transform overflow-hidden rounded-xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="text-lg w-full flex justify-center text-2xl font-bold leading-6 text-gray-900"
+                    className="relative text-lg w-full h-10 flex justify-center items-center text-2xl font-bold leading-6 text-gray-900 border-2 border-black rounded-lg"
                   >
                     Mortgage Calculator
+                  
+                    <button
+                      type="button"
+                      className="absolute right-0 flex justify-center items-center rounded-r-md border border-transparent h-9 w-9 text-gray-600 hover:bg-gray-200 focus:outline-none focus-visible:ring-0"
+                      onClick={closeMortgageModal}
+                    >
+                      <FontAwesomeIcon icon={faXmark} />
+                    </button>
+                  
                   </Dialog.Title>
                   
                   <div className="mt-4">
-                    <p className="mx-6 md:mx-12 italic text-gray-600">
-                    Calculates and visualises Loan or Mortgage Payments. Graph and Payment Schedule show how Interest Rates and Initial Fixed Rate Periods impact your Oustanding Capital Amount
+                    <p className="mx-6 md:mx-12 italic text-gray-600 text-left">
+                    Calculates and visualises Loan or Mortgage Payments. Graph and Payment Schedule show how payments reduce your Oustanding Capital Amount over a period of time.
                     </p>
                   </div>
                   
@@ -88,15 +97,7 @@ export default function MortgageModal({isMortgageModalOpen, setIsMortgageModalOp
                     </Tooltip>
                   </div>
 
-                  <div className="absolute top-3 right-5">
-                    <button
-                      type="button"
-                      className="flex justify-center rounded-md border border-transparent p-3 text-gray-600 hover:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2"
-                      onClick={closeMortgageModal}
-                    >
-                      <FontAwesomeIcon icon={faXmark} />
-                    </button>
-                  </div>
+                  
                 </Dialog.Panel>
               </Transition.Child>
             </div>
