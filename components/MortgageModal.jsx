@@ -14,8 +14,6 @@ export default function MortgageModal({isMortgageModalOpen, setIsMortgageModalOp
     setIsMortgageModalOpen(false)
   }
 
-
-  
   return (
     <>
       <Transition appear show={isMortgageModalOpen} as={Fragment}>
@@ -33,7 +31,7 @@ export default function MortgageModal({isMortgageModalOpen, setIsMortgageModalOp
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
-            <div className="flex min-h-full items-center justify-center p-4 text-center">
+            <div className="flex min-h-full items-center justify-center p-2 text-center">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -46,13 +44,13 @@ export default function MortgageModal({isMortgageModalOpen, setIsMortgageModalOp
                 <Dialog.Panel className="w-full max-w-2xl transform overflow-hidden rounded-xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="relative text-lg w-full h-10 flex justify-center items-center text-2xl font-bold leading-6 text-gray-900 border-2 border-black rounded-lg"
+                    className="relative text-lg w-full h-10 flex justify-center items-center text-2xl font-bold leading-6 text-black bg-gray-200 rounded-lg"
                   >
                     Mortgage Calculator
                   
                     <button
                       type="button"
-                      className="absolute right-0 flex justify-center items-center rounded-r-md border border-transparent h-9 w-9 text-gray-600 hover:bg-gray-200 focus:outline-none focus-visible:ring-0"
+                      className="absolute right-0 flex justify-center items-center rounded-r-lg border border-transparent h-10 w-10 text-gray-600 hover:bg-gray-300 focus:outline-none focus-visible:ring-0"
                       onClick={closeMortgageModal}
                     >
                       <FontAwesomeIcon icon={faXmark} />
@@ -60,29 +58,13 @@ export default function MortgageModal({isMortgageModalOpen, setIsMortgageModalOp
                   
                   </Dialog.Title>
                   
-                  <div className="mt-4">
+                  <div className="mt-3">
                     <p className="mx-6 md:mx-12 italic text-gray-600 text-left">
-                    Calculates and visualises Loan or Mortgage Payments. Graph and Payment Schedule show how payments reduce your Oustanding Capital Amount over a period of time.
+                    Calculates and visualises Loan or Mortgage Payments. Graph and Payment Schedule show how payments reduce your Outstanding Capital Amount over a period of time.
                     </p>
                   </div>
-                  
-                  <div className="flex flex-col border-black border-2 rounded-lg mt-5">
-                    
-                    <Image src={PaymentCalculator} />
 
-                    <div className="flex w-full justify-between border-t-2 border-black divide-x-2 divide-black">
-                      <a href="https://payment-calculator120.netlify.app/" target="_blank" className="w-full flex justify-center items-center bg-gray-300 h-12 rounded-bl-md cursor-pointer hover:bg-gray-500 hover:text-white focus:outline-none transition ease-in-out">
-                        <FontAwesomeIcon icon={faEye} className="h-5" />
-                        <div className="ml-2 text-lg font-semibold">DEMO</div>
-                      </a>
-                      <a href="https://github.com/jacovb/payment-calculator" target="_blank" className="w-full flex justify-center items-center bg-gray-300 h-12 rounded-br-md cursor-pointer hover:bg-gray-500 hover:text-white focus:outline-none transition ease-in-out">
-                        <FontAwesomeIcon icon={faGithub} className="h-5" />
-                        <div className="ml-2 text-lg font-semibold">CODE</div>
-                      </a>
-                    </div>
-                  </div>
-                  
-                  <div className="w-2/3 md:w-1/2 mx-auto h-10 mt-4 flex flex-row justify-around">
+                  <div className="w-2/3 md:w-1/2 mx-auto h-10 mt-3 flex flex-row justify-around">
                     <Tooltip title="HTML">
                       <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}} className="h-8"/>
                     </Tooltip>
@@ -96,8 +78,21 @@ export default function MortgageModal({isMortgageModalOpen, setIsMortgageModalOp
                       <FontAwesomeIcon icon={faReact} style={{color: "#61DBFB"}} className="h-8"/>
                     </Tooltip>
                   </div>
-
                   
+                  <div className="flex flex-col border-black border-2 rounded-lg mt-3 drop-shadow-md">
+                    <Image src={PaymentCalculator} />
+                    <div className="flex w-full justify-between border-t-2 border-black divide-x-2 divide-black">
+                      <a href="https://payment-calculator120.netlify.app/" target="_blank" className="w-full flex justify-center items-center bg-gray-300 h-12 rounded-bl-md cursor-pointer hover:bg-gray-500 hover:text-white focus:outline-none transition ease-in-out">
+                        <FontAwesomeIcon icon={faEye} className="h-5" />
+                        <div className="ml-2 text-lg font-semibold">DEMO</div>
+                      </a>
+                      <a href="https://github.com/jacovb/payment-calculator" target="_blank" className="w-full flex justify-center items-center bg-gray-300 h-12 rounded-br-md cursor-pointer hover:bg-gray-500 hover:text-white focus:outline-none transition ease-in-out">
+                        <FontAwesomeIcon icon={faGithub} className="h-5" />
+                        <div className="ml-2 text-lg font-semibold">CODE</div>
+                      </a>
+                    </div>
+                  </div>
+
                 </Dialog.Panel>
               </Transition.Child>
             </div>
