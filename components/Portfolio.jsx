@@ -15,16 +15,15 @@ export default function Portfolio() {
         <h2 className="secondary-title">
           Projects
         </h2>
-        <p className="section-paragraph">Projects I've been working on</p>
-        <div className="flex flex-col items-center md:flex-row md:justify-between w-full ">
+        <div className="flex flex-col items-center mt-10 md:flex-row md:justify-between w-full ">
           <button onClick={() => setIsMortgageModalOpen(true)}>
-            <Project title="Mortgage Calculator" description="Calculate Monthly Payments" link="Demo" />
+            <Project title="Mortgage Calculator" description="Calculate Monthly Payments" />
           </button>
           <button onClick={() => setIsTimesheetModalOpen(true)}>
-            <Project title="Punch-Card" description="Timesheet Harvester" link="Demo" />
+            <Project title="Punch-Card" description="Timesheet Harvester" />
           </button>
           <button onClick={() => setIsBarberModalOpen(true)}>
-            <Project title="The London Barber Co." description="Book and pay for your Barber appointments online" link="Demo" />
+            <Project title="The London Barber Co." description="Book and pay for your Barber appointments" />
           </button>
         </div>
       </section>

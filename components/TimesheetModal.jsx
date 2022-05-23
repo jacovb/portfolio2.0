@@ -53,7 +53,7 @@ export default function TimesheetModal({isTimesheetModalOpen, setIsTimesheetModa
                       className="absolute right-0 flex justify-center items-center rounded-r-lg border border-transparent h-10 w-10 text-gray-600 hover:bg-gray-300 focus:outline-none focus-visible:ring-0"
                       onClick={closeTimesheetModal}
                     >
-                      <FontAwesomeIcon icon={faXmark} />
+                      <FontAwesomeIcon icon={faXmark} className="h-5"/>
                     </button>
                   
                   </Dialog.Title>
