@@ -29,7 +29,7 @@ body {
 
 .secondary-title::before {
   content: "";
-  @apply block w-12 h-2 bg-theme rounded-full mb-1;
+  @apply block w-12 h-2 bg-blue-700 rounded-full mb-1;
 }
 
 .section-paragraph {
@@ -51,30 +51,3 @@ body {
 .h-screen-partial {
   height: 80vh;
 }
-
-.nav-dot {
-  transition: background 200ms, border-color 200ms;
-}
-
-.selected-circle {
-  @apply border-theme bg-theme;
-}
-
-.nav-dot:hover span {
-  opacity: 1;
-}
-
-/* @layer utilities {
-  .snap {
-    scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint);
-  }
-  .snap-y {
-    --scroll-snap-direction: y;
-  }
-  .snap-mandatory {
-    --scroll-snap-constraint: mandatory;
-  }
-  .snap-start {
-    scroll-snap-align: start;
-  }
-} */

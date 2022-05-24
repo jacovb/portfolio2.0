@@ -22,13 +22,11 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="hidden md:flex space-x-12 items-center">
-        <Link href="/#home" className="text-selected">
-          Home
-        </Link>
+        <Link href="/#home">Home</Link>
         <Link href="/#about">About</Link>
         <Link href="/#projects">Projects</Link>
         <Link href="/#contact">
-          <button className="px-6 py-2 bg-theme text-white font-bold">Contact</button>
+          <button className="px-6 py-2 bg-blue-700 text-white font-bold">Contact</button>
         </Link>
       </div>
       <button className="md:hidden" onClick={openModal}>
