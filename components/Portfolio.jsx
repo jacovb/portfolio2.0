@@ -12,7 +12,7 @@ export default function Portfolio() {
   return (
     <div className="container min-h-screen snap-start flex justify-between items-center mx-auto px-4 md:px-8 lg:px-12 w-full focus-visible:ring-0">
       <section id="projects" className="w-full">
-        <h2 className="secondary-title">
+        <h2 className="text-3xl font-bold">
           Projects
         </h2>
         <div className="flex flex-col items-center mt-10 md:flex-row md:justify-between w-full ">

@@ -5,14 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        body: "#17171F",
-        nav: "#404053",
-        secondary: "#9191A4",
-        badge: "#3F3F51",
-        inputBorder: "#565666",
-        input: "#2A2A35",
-      },
       fontFamily: {
         poppins: ["'Poppins'", "sans-serif"],
       },

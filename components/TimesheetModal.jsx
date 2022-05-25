@@ -50,7 +50,7 @@ export default function TimesheetModal({isTimesheetModalOpen, setIsTimesheetModa
                   
                     <button
                       type="button"
-                      className="absolute right-0 flex justify-center items-center rounded-r-lg border border-transparent h-10 w-10 text-gray-600 hover:bg-gray-300 focus:outline-none focus-visible:ring-0"
+                      className="absolute right-0 flex justify-center items-center rounded-r-lg border border-transparent h-10 w-10 text-gray-600 hover:bg-blue-500 hover:text-white focus:outline-none focus-visible:ring-0"
                       onClick={closeTimesheetModal}
                     >
                       <FontAwesomeIcon icon={faXmark} className="h-5"/>
@@ -93,11 +93,11 @@ export default function TimesheetModal({isTimesheetModalOpen, setIsTimesheetModa
                   <div className="flex flex-col border-black border-2 rounded-lg mt-3 drop-shadow-md">
                     <Image src={PunchCard} />
                     <div className="flex w-full justify-between border-t-2 border-black divide-x-2 divide-black">
-                      <a href="https://master.d13ledzsxl0qxj.amplifyapp.com/" target="_blank" className="w-full flex justify-center items-center bg-gray-300 h-12 rounded-bl-md cursor-pointer hover:bg-gray-500 hover:text-white focus:outline-none transition ease-in-out">
+                      <a href="https://master.d13ledzsxl0qxj.amplifyapp.com/" target="_blank" className="w-full flex justify-center items-center bg-gray-200 h-12 rounded-bl-md cursor-pointer hover:bg-blue-500 hover:text-white focus:outline-none transition ease-in-out">
                         <FontAwesomeIcon icon={faEye} className="h-5" />
                         <div className="ml-2 text-lg font-semibold">DEMO</div>
                       </a>
-                      <a href="https://github.com/jacovb/time-harvest" target="_blank" className="w-full flex justify-center items-center bg-gray-300 h-12 rounded-br-md cursor-pointer hover:bg-gray-500 hover:text-white focus:outline-none transition ease-in-out">
+                      <a href="https://github.com/jacovb/time-harvest" target="_blank" className="w-full flex justify-center items-center bg-gray-200 h-12 rounded-br-md cursor-pointer hover:bg-blue-500 hover:text-white focus:outline-none transition ease-in-out">
                         <FontAwesomeIcon icon={faGithub} className="h-5" />
                         <div className="ml-2 text-lg font-semibold">CODE</div>
                       </a>
