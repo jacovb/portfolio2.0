@@ -60,8 +60,8 @@ export default function BarberModal({isBarberModalOpen, setIsBarberModalOpen}) {
                   
                   <div className="mt-3">
                     <p className="mx-6 md:mx-10 italic text-gray-600 text-left">
-                      Users can Book and Pay for an appointment at this Barber Shop.
-                      A full-stack CRUD app utilising AWS technologies for Authorization and Data Storage. Payments by Stripe. The app is built in Next.js
+                      Book and Pay for an appointment at this Barber Shop.
+                      A full-stack CRUD app utilising AWS technologies for Authorization and Data Storage. Payments by Stripe, built in Next.js
                     </p>
                   </div>
 

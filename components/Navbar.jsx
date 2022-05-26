@@ -21,15 +21,15 @@ export default function Navbar({ pageNum }) {
           <a className="hover:text-blue-700 transition-all ease-in-out">{(pageNum !== "page1" ? "Jaco.vanBiljon" : "")}</a>
         </Link>
       </div>
-      <div className="hidden md:flex space-x-12 items-center">
+      <div className="hidden md:flex space-x-2 items-center">
         <Link href="/#home">
-          <a className="hover:text-blue-700 transition ease-in-out">Home</a>
+          <a className="hover:bg-blue-300 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full">Home</a>
         </Link>
         <Link href="/#about">
-          <a className="hover:text-blue-700 transition ease-in-out">About</a>
+          <a className="hover:bg-blue-300 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full">About</a>
         </Link>
         <Link href="/#projects">
-          <a className="hover:text-blue-700 transition ease-in-out">Projects</a>
+          <a className="hover:bg-blue-300 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full">Projects</a>
         </Link>
         <Link href="/#contact">
           <button className="hover:bg-blue-300 hover:text-blue-700 transition ease-in-out px-6 py-2 bg-blue-700 text-white font-bold rounded-full">Contact</button>

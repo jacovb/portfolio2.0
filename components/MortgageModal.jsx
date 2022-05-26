@@ -41,19 +41,19 @@ export default function MortgageModal({isMortgageModalOpen, setIsMortgageModalOp
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-2xl transform overflow-hidden rounded-xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="border-black border-2 w-full max-w-2xl transform overflow-hidden rounded-xl bg-white text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="relative text-lg w-full h-10 flex justify-center items-center text-2xl font-bold leading-6 text-black bg-gray-200 rounded-lg"
+                    className="border-b-2 border-black relative text-lg w-full h-12 flex justify-center items-center text-2xl font-bold leading-6 text-black bg-gray-200 rounded-t-lg"
                   >
                     Mortgage Calculator
                   
                     <button
                       type="button"
-                      className="absolute right-0 flex justify-center items-center rounded-r-lg border border-transparent h-10 w-10 text-gray-600 hover:text-white hover:bg-blue-500 focus:outline-none focus-visible:ring-0 transition ease-in-out"
+                      className="border-l-2 border-b border-black absolute right-0 flex justify-center items-center rounded-tr-lg h-12 w-12 text-gray-600 hover:text-white hover:bg-blue-500 focus:outline-none focus-visible:ring-0 transition ease-in-out"
                       onClick={closeMortgageModal}
                     >
-                      <FontAwesomeIcon icon={faXmark} className="h-5"/>
+                      <FontAwesomeIcon icon={faXmark} className="h-6"/>
                     </button>
                   
                   </Dialog.Title>
@@ -79,7 +79,7 @@ export default function MortgageModal({isMortgageModalOpen, setIsMortgageModalOp
                     </Tooltip>
                   </div>
                   
-                  <div className="flex flex-col border-black border-2 rounded-lg mt-3 drop-shadow-md">
+                  <div className="flex flex-col border-black border-2 rounded-lg m-3 drop-shadow-md">
                     <Image src={PaymentCalculator} />
                     <div className="flex w-full justify-between border-t-2 border-black divide-x-2 divide-black">
                       <a href="https://payment-calculator120.netlify.app/" target="_blank" className="w-full flex justify-center items-center bg-gray-200 h-12 rounded-bl-md cursor-pointer hover:bg-blue-500 hover:text-white focus:outline-none transition ease-in-out">
