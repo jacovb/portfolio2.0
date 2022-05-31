@@ -15,7 +15,7 @@ export default function Navbar({ pageNum }) {
 
   
   return (
-    <nav className="container fixed flex justify-end md:justify-between items-center py-6 px-8 md:px-14 lg:px-24 w-screen max-w-full">
+    <nav className="container fixed flex justify-end md:justify-between items-center py-6 px-8 md:px-14 lg:px-24 w-screen max-w-full z-[8]">
       <div className="hidden md:block text-lg font-bold">
         <Link href="/#home">
           <a className="hover:text-blue-700 transition-all ease-in-out">{(pageNum !== "page1" ? "Jaco.vanBiljon" : "")}</a>
