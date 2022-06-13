@@ -23,16 +23,16 @@ export default function Navbar({ pageNum }) {
       </div>
       <div className="hidden md:flex space-x-2 items-center">
         <Link href="/#home">
-          <a className="hover:bg-blue-300 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full">Home</a>
+          <a className="hover:bg-blue-200 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full">Home</a>
         </Link>
         <Link href="/#about">
-          <a className="hover:bg-blue-300 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full">About</a>
+          <a className="hover:bg-blue-200 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full">About</a>
         </Link>
         <Link href="/#projects">
-          <a className="hover:bg-blue-300 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full">Projects</a>
+          <a className="hover:bg-blue-200 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full">Projects</a>
         </Link>
         <Link href="/#contact">
-          <button className="hover:bg-blue-300 hover:text-blue-700 transition ease-in-out px-6 py-2 bg-blue-700 text-white font-bold rounded-full">Contact</button>
+          <button className="hover:bg-blue-200 hover:text-blue-700 transition ease-in-out px-6 py-2 bg-blue-700 text-white font-bold rounded-full">Contact</button>
         </Link>
       </div>
       <button className="md:hidden" onClick={openModal}>

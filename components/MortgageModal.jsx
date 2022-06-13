@@ -59,7 +59,7 @@ export default function MortgageModal({isMortgageModalOpen, setIsMortgageModalOp
                   </Dialog.Title>
                   
                   <div className="mt-3">
-                    <p className="mx-6 md:mx-12 italic text-gray-600 text-left">
+                    <p className="mx-6 md:mx-8 italic text-gray-600 text-left">
                     Calculates and visualises Loan or Mortgage Payments. Graph and Payment Schedule show how payments reduce your Outstanding Capital Amount over a period of time.
                     </p>
                   </div>
@@ -79,16 +79,18 @@ export default function MortgageModal({isMortgageModalOpen, setIsMortgageModalOp
                     </Tooltip>
                   </div>
                   
-                  <div className="flex flex-col border-black border-2 rounded-lg m-3 drop-shadow-md">
+                  <div className="flex flex-col border-black border-2 rounded-lg m-4 drop-shadow-md">
                     <Image src={PaymentCalculator} />
-                    <div className="flex w-full justify-between border-t-2 border-black divide-x-2 divide-black">
+                  </div>
+                  <div className="flex flex-col border-black border-t-2 rounded-b-lg drop-shadow-md">
+                    <div className="flex w-full justify-between border-black divide-x-2 divide-black">
                       <a href="https://payment-calculator120.netlify.app/" target="_blank" className="w-full flex justify-center items-center bg-gray-200 h-12 rounded-bl-md cursor-pointer hover:bg-blue-500 hover:text-white focus:outline-none transition ease-in-out">
                         <FontAwesomeIcon icon={faEye} className="h-5" />
-                        <div className="ml-2 text-lg font-semibold">DEMO</div>
+                        <div className="ml-2 text-xl font-semibold">Demo</div>
                       </a>
                       <a href="https://github.com/jacovb/payment-calculator" target="_blank" className="w-full flex justify-center items-center bg-gray-200 h-12 rounded-br-md cursor-pointer hover:bg-blue-500 hover:text-white focus:outline-none transition ease-in-out">
                         <FontAwesomeIcon icon={faGithub} className="h-5" />
-                        <div className="ml-2 text-lg font-semibold">CODE</div>
+                        <div className="ml-2 text-xl font-semibold">Code</div>
                       </a>
                     </div>
                   </div>
