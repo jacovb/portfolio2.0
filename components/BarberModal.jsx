@@ -17,7 +17,7 @@ export default function BarberModal({isBarberModalOpen, setIsBarberModalOpen}) {
   return (
     <>
       <Transition appear show={isBarberModalOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={closeBarberModal}>
+        <Dialog as="div" className="relative z-20" onClose={closeBarberModal}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"

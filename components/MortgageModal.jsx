@@ -17,7 +17,7 @@ export default function MortgageModal({isMortgageModalOpen, setIsMortgageModalOp
   return (
     <>
       <Transition appear show={isMortgageModalOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={closeMortgageModal}>
+        <Dialog as="div" className="relative z-20" onClose={closeMortgageModal}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"

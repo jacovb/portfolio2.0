@@ -17,7 +17,7 @@ export default function TimesheetModal({isTimesheetModalOpen, setIsTimesheetModa
   return (
     <>
       <Transition appear show={isTimesheetModalOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={closeTimesheetModal}>
+        <Dialog as="div" className="relative z-20" onClose={closeTimesheetModal}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
