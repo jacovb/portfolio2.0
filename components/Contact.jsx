@@ -1,3 +1,5 @@
+import ContactForm from "./ContactForm"
+
 export default function Contact() {
   return (
     <div className="container min-h-screen snap-start flex justify-between items-center mx-auto px-4 md:px-8 lg:px-12 w-full">
@@ -11,6 +13,7 @@ export default function Contact() {
           </h2>
         </div>
         <p className="text-gray-500 my-10 w-full max-w-3xl">Get in touch</p>
+        <ContactForm />
       </section>
     </div>
   )
