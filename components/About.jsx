@@ -29,15 +29,15 @@ export default function About() {
               <li className="ml-6">continuously learn and grow</li>
             </ul>
             <div className="h-20 mt-4 flex flex-row items-center w-72 justify-around">
-              <a href="https://github.com/jacovb" target="_blank" rel="noreferrer noopener" className="h-16 w-16 border-2 border-black rounded-full flex items-center justify-center hover:border-blue-700 hover:drop-shadow-xl hover:text-blue-700">
+              <a href="https://github.com/jacovb" target="_blank" rel="noreferrer noopener" className="h-16 w-16 border-2 border-black rounded-full flex items-center justify-center hover:border-blue-700 hover:drop-shadow-xl hover:text-blue-700 transition ease-in-out">
                 <FontAwesomeIcon icon={faGithub} className="h-8" />
               </a>
 
-              <a href="https://www.linkedin.com/in/jaco-van-biljon-62b27422/" target="_blank" rel="noreferrer noopener" className="h-16 w-16 border-2 border-black rounded-full flex items-center justify-center hover:border-blue-700 hover:drop-shadow-xl hover:text-blue-700">
+              <a href="https://www.linkedin.com/in/jaco-van-biljon-62b27422/" target="_blank" rel="noreferrer noopener" className="h-16 w-16 border-2 border-black rounded-full flex items-center justify-center hover:border-blue-700 hover:drop-shadow-xl hover:text-blue-700 transition ease-in-out">
                 <FontAwesomeIcon icon={faLinkedin} className="h-8" />
               </a>
 
-              <a href="#contact" className="h-16 w-16 border-2 border-black rounded-full flex items-center justify-center hover:border-blue-700 hover:drop-shadow-xl hover:text-blue-700">
+              <a href="#contact" className="h-16 w-16 border-2 border-black rounded-full flex items-center justify-center hover:border-blue-700 hover:drop-shadow-xl hover:text-blue-700 transition ease-in-out">
                 <FontAwesomeIcon icon={faEnvelope} className="h-8" />
               </a>
             </div>
