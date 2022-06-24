@@ -20,7 +20,7 @@ export default function Portfolio() {
             Projects
           </h2>
         </div>
-        <div className="flex flex-col items-center mt-14 md:flex-row md:justify-between w-full max-w-3xl">
+        <div className="flex flex-col items-center mt-12 md:mt-20 md:flex-row md:justify-between w-full max-w-3xl">
           <button onClick={() => setIsMortgageModalOpen(true)}>
             <Project title="Mortgage Calculator" description="Calculate Monthly Payments" />
           </button>
