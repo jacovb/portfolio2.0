@@ -1,6 +1,16 @@
+import { useState, useEffect } from "react"
+
 export default function ContactForm() {
+  const [messageSuccess, setMessageSuccess] = useState(false);
+
+  useEffect(() => {
+    if ( window.location.search.includes('success=true') ) {
+      setMessageSuccess(true);
+    }
+  }, []);
+
   return (
-    <form name="contact" method="POST" data-netlify="true" autoComplete="off" className="flex justify-center items-center flex-col w-full">
+    <form name="contact" method="POST" action="/?success=true" data-netlify="true" data-netlify-honeypot="bot-field" autoComplete="off" className="flex justify-center items-center flex-col w-full">
       <input type="hidden" name="form-name" value="contact" />
       <p className="w-96 h-18">
         <label htmlFor="name" className="pl-4 text-base text-gray-500">
@@ -25,6 +35,11 @@ export default function ContactForm() {
       <p>
         <button type="submit" className="hover:bg-blue-200 hover:text-blue-700 transition ease-in-out px-6 py-2 bg-blue-700 text-white font-bold rounded-full">Send</button>
       </p>
+      {messageSuccess && (
+        <p className="text-blue-700 mt-4">
+          Successfully submitted message!
+        </p>
+      )}
     </form>
   )
 }
