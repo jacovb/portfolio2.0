@@ -95,11 +95,11 @@ export default function TimesheetModal({isTimesheetModalOpen, setIsTimesheetModa
                   </div>
                   <div className="flex flex-col border-black border-t-2 rounded-b-lg drop-shadow-md">
                     <div className="flex w-full justify-between border-black divide-x-2 divide-black">
-                      <a href="https://master.d13ledzsxl0qxj.amplifyapp.com/" target="_blank" className="w-full flex justify-center items-center bg-gray-200 h-12 rounded-bl-md cursor-pointer hover:bg-blue-500 hover:text-white focus:outline-none transition ease-in-out">
+                      <a href="https://master.d13ledzsxl0qxj.amplifyapp.com/" target="_blank" rel="noreferrer" className="w-full flex justify-center items-center bg-gray-200 h-12 rounded-bl-md cursor-pointer hover:bg-blue-500 hover:text-white focus:outline-none transition ease-in-out">
                         <FontAwesomeIcon icon={faEye} className="h-5" />
                         <div className="ml-2 text-xl font-semibold">Demo</div>
                       </a>
-                      <a href="https://github.com/jacovb/time-harvest" target="_blank" className="w-full flex justify-center items-center bg-gray-200 h-12 rounded-br-md cursor-pointer hover:bg-blue-500 hover:text-white focus:outline-none transition ease-in-out">
+                      <a href="https://github.com/jacovb/time-harvest" target="_blank" rel="noreferrer" className="w-full flex justify-center items-center bg-gray-200 h-12 rounded-br-md cursor-pointer hover:bg-blue-500 hover:text-white focus:outline-none transition ease-in-out">
                         <FontAwesomeIcon icon={faGithub} className="h-5" />
                         <div className="ml-2 text-xl font-semibold">Code</div>
                       </a>
