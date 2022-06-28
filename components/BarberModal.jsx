@@ -89,7 +89,7 @@ export default function BarberModal({isBarberModalOpen, setIsBarberModalOpen, pr
                   </div>
                   
                   <div className="flex flex-col border-black border-2 rounded-lg m-4 drop-shadow-md">
-                    <Image src={preview} />
+                    <Image src={preview} priority="true"/>
                   </div>
                   <div className="flex flex-col border-black border-t-2 rounded-b-lg drop-shadow-md">
                     <div className="flex w-full justify-between border-black divide-x-2 divide-black">
