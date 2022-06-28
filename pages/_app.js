@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div
-      className="flex flex-col bg-white text-black font-poppins max-h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth"
+      className="flex flex-col bg-white text-black font-sans max-h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth"
       onScroll={handleScroll}
     >
       <Navbar pageNum={pageNum} />

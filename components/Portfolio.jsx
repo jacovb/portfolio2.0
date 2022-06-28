@@ -4,6 +4,10 @@ import MortgageModal from "./MortgageModal";
 import TimesheetModal from "./TimesheetModal";
 import BarberModal from "./BarberModal";
 
+import PaymentCalculator from "../images/PaymentCalculator.gif"
+import PunchCard from "../images/PunchCard.gif"
+import BarberShop from "../images/BarberShop.gif"
+
 export default function Portfolio() {
   const [isMortgageModalOpen, setIsMortgageModalOpen] = useState(false);
   const [isTimesheetModalOpen, setIsTimesheetModalOpen] = useState(false);
@@ -32,9 +36,9 @@ export default function Portfolio() {
           </button>
         </div>
       </section>
-      <MortgageModal isMortgageModalOpen={isMortgageModalOpen} setIsMortgageModalOpen={setIsMortgageModalOpen} />
-      <TimesheetModal isTimesheetModalOpen={isTimesheetModalOpen} setIsTimesheetModalOpen={setIsTimesheetModalOpen} />
-      <BarberModal isBarberModalOpen={isBarberModalOpen} setIsBarberModalOpen={setIsBarberModalOpen} />
+      <MortgageModal isMortgageModalOpen={isMortgageModalOpen} setIsMortgageModalOpen={setIsMortgageModalOpen} preview={PaymentCalculator}/>
+      <TimesheetModal isTimesheetModalOpen={isTimesheetModalOpen} setIsTimesheetModalOpen={setIsTimesheetModalOpen} preview={PunchCard}/>
+      <BarberModal isBarberModalOpen={isBarberModalOpen} setIsBarberModalOpen={setIsBarberModalOpen} preview={BarberShop}/>
     </div>
   )
 }

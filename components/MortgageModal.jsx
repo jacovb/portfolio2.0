@@ -1,7 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import Image from 'next/image'
-import PaymentCalculator from "../images/PaymentCalculator.gif"
+// import PaymentCalculator from "../images/PaymentCalculator.gif"
 import Tooltip from './Tooltip'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +9,7 @@ import { faEye, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faJs, faReact, faHtml5, faCss3} from "@fortawesome/free-brands-svg-icons";
 
-export default function MortgageModal({isMortgageModalOpen, setIsMortgageModalOpen}) {
+export default function MortgageModal({isMortgageModalOpen, setIsMortgageModalOpen, preview}) {
   function closeMortgageModal() {
     setIsMortgageModalOpen(false)
   }
@@ -80,7 +80,7 @@ export default function MortgageModal({isMortgageModalOpen, setIsMortgageModalOp
                   </div>
                   
                   <div className="flex flex-col border-black border-2 rounded-lg m-4 drop-shadow-md">
-                    <Image src={PaymentCalculator} />
+                    <Image src={preview} />
                   </div>
                   <div className="flex flex-col border-black border-t-2 rounded-b-lg drop-shadow-md">
                     <div className="flex w-full justify-between border-black divide-x-2 divide-black">
