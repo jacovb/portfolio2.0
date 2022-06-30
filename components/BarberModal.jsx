@@ -1,7 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import Image from 'next/image'
-// import BarberShop from "../images/BarberShop.gif"
+import BarberShop from "../images/BarberShop.gif"
 import Tooltip from './Tooltip'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +9,7 @@ import { faEye, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faJs, faReact, faAws, faStripe} from "@fortawesome/free-brands-svg-icons";
 
-export default function BarberModal({isBarberModalOpen, setIsBarberModalOpen, preview}) {
+export default function BarberModal({isBarberModalOpen, setIsBarberModalOpen}) {
   function closeBarberModal() {
     setIsBarberModalOpen(false)
   }
@@ -89,7 +89,7 @@ export default function BarberModal({isBarberModalOpen, setIsBarberModalOpen, pr
                   </div>
                   
                   <div className="flex flex-col border-black border-2 rounded-lg m-4 drop-shadow-md">
-                    <Image src={preview} priority="true"/>
+                    <Image src={BarberShop} priority="true" alt="Preview of Barber Appointment App" />
                   </div>
                   <div className="flex flex-col border-black border-t-2 rounded-b-lg drop-shadow-md">
                     <div className="flex w-full justify-between border-black divide-x-2 divide-black">

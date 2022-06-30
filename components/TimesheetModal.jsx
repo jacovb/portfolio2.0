@@ -1,7 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import Image from 'next/image'
-// import PunchCard from "../images/PunchCard.gif"
+import PunchCard from "../images/PunchCard.gif"
 import Tooltip from './Tooltip'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +9,7 @@ import { faEye, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faJs, faReact, faAws, faHtml5, faCss3} from "@fortawesome/free-brands-svg-icons";
 
-export default function TimesheetModal({isTimesheetModalOpen, setIsTimesheetModalOpen, preview}) {
+export default function TimesheetModal({isTimesheetModalOpen, setIsTimesheetModalOpen}) {
   function closeTimesheetModal() {
     setIsTimesheetModalOpen(false)
   }
@@ -91,7 +91,7 @@ export default function TimesheetModal({isTimesheetModalOpen, setIsTimesheetModa
                   </div>
                   
                   <div className="flex flex-col border-black border-2 rounded-lg m-4 drop-shadow-md">
-                    <Image src={preview} priority="true"/>
+                    <Image src={PunchCard} priority="true" alt="Preview of PunchCard Timesheet App" />
                   </div>
                   <div className="flex flex-col border-black border-t-2 rounded-b-lg drop-shadow-md">
                     <div className="flex w-full justify-between border-black divide-x-2 divide-black">
