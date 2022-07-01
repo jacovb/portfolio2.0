@@ -18,7 +18,7 @@ export default function About() {
         </div>
         <div className="mt-16 mb-12 w-full max-w-3xl z-10 flex">
           <div className="flex-col">
-            <h2 className="text-xl font-bold text-black w-[30rem]">I'm a self-taught Frontend Developer, with a background in Architecture. I like to:</h2>
+            <h2 className="text-xl font-bold text-black w-[30rem]">{`I'm a self-taught Frontend Developer, with a background in Architecture. I like to:`}</h2>
             <ul className="text-gray-600 text-lg list-disc mt-4">
               <li className="ml-6">build things</li>
               <li className="ml-6">solve problems</li>
