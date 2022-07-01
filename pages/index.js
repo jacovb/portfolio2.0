@@ -7,7 +7,7 @@ import NavDots from "../components/NavDots";
 
 export default function Home({ pageNum }) {
   return (
-    <div>
+    <div className="scroll-smooth">
       <Head>
         <title>Portfolio - Jaco van Biljon</title>
         <meta
