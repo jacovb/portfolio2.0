@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faJs, faReact, faHtml5, faCss3, faAws } from "@fortawesome/free-brands-svg-icons";
+import { faJs, faReact, faHtml5, faCss3, faAws } from "@fortawesome/free-brands-svg-icons";
 
 export default function TechnicalSkills() {
   return (
     <>
       <h2 className="text-xl font-bold text-black mt-4">Technical Skills:</h2>
-      <div className="flex flex-wrap mt-4">
+      <div className="flex flex-wrap mt-4 w-96 lg:w-full">
         <div className="flex flex-col items-center justify-center w-20 h-20">
           <FontAwesomeIcon icon={faHtml5} style={{color: "#E44D26"}} className="h-8"/>
           <h3 className="text-md font-semibold mt-1">HTML</h3>
