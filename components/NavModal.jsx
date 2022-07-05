@@ -33,16 +33,16 @@ export default function NavModal({isNavModalOpen, closeModal}) {
                 <Dialog.Panel className="w-full max-w-xs transform overflow-hidden rounded-lg bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <nav>
                     <div className="flex flex-col my-3">
-                      <Link href="/#home">
+                      <Link href="/#home" passHref>
                         <button onClick={closeModal} className="py-3 rounded-lg text-lg font-bold hover:bg-gray-300">Home</button>
                       </Link>
-                      <Link href="/#about">
+                      <Link href="/#about" passHref>
                         <button onClick={closeModal} className="py-3 rounded-lg text-lg font-bold hover:bg-gray-300">About</button>
                       </Link>
-                      <Link href="/#projects">
+                      <Link href="/#projects" passHref>
                         <button onClick={closeModal} className="py-3 rounded-lg text-lg font-bold hover:bg-gray-300">Projects</button>
                       </Link>
-                      <Link href="/#contact">
+                      <Link href="/#contact" passHref>
                         <button onClick={closeModal} className="py-3 rounded-lg text-lg font-bold hover:bg-gray-300">Contact</button>
                       </Link>
                     </div>

@@ -13,21 +13,21 @@ export default function ContactForm() {
     <form name="contact" method="POST" action="/?success=true" data-netlify="true" data-netlify-honeypot="bot-field" autoComplete="off" className="flex justify-center items-center flex-col w-full">
       <input type="hidden" name="form-name" value="contact" />
       <p className="w-96 h-18">
-        <label htmlFor="name" className="pl-4 text-base text-gray-500">
+        <label htmlFor="name" className="pl-4 text-base text-gray-600">
           Name
         </label> 
         <br />
         <input type="text" name="name" id="name" className="w-full py-2 px-4 border-2 border-black rounded-lg focus:bg-gray-100 hover:drop-shadow-xl focus:drop-shadow-xl transition ease-in-out"/>
       </p>
       <p className="w-96 h-18 mt-1">
-        <label htmlFor="email" className="pl-4 text-base text-gray-500">
+        <label htmlFor="email" className="pl-4 text-base text-gray-600">
           Email
         </label> 
         <br />
         <input type="email" name="email" id="email" className="w-full py-2 px-4 border-2 border-black rounded-lg focus:bg-gray-100 hover:drop-shadow-xl focus:drop-shadow-xl transition ease-in-out"/>
       </p>
       <p className="w-96 h-48 mt-1">
-        <label htmlFor="message" className="pl-4 text-base text-gray-500">
+        <label htmlFor="message" className="pl-4 text-base text-gray-600">
           Message
         </label> <br />
         <textarea name="message" id="message" className="w-full h-36 py-2 px-4 border-2 border-black rounded-lg focus:bg-gray-100 resize-none hover:drop-shadow-xl focus:drop-shadow-xl transition ease-in-out"></textarea>

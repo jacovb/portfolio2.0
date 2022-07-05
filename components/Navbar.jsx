@@ -17,22 +17,22 @@ export default function Navbar({ pageNum }) {
   return (
     <nav className="container fixed flex justify-end md:justify-between items-center py-6 px-8 md:px-14 lg:px-24 w-screen max-w-full z-[8]">
       <div className="hidden md:block text-lg font-bold">
-        <Link href="/#home">
+        <Link href="/#home" passHref>
           <a className="hover:text-blue-700 transition-all ease-in-out">{(pageNum !== "page1" ? "Jaco.vanBiljon" : "")}</a>
         </Link>
       </div>
       <div className="hidden md:flex space-x-2 items-center">
-        <Link href="/#home">
+        <Link href="/#home" passHref>
           <a className="hover:bg-blue-200 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full">Home</a>
         </Link>
-        <Link href="/#about">
+        <Link href="/#about" passHref>
           <a className="hover:bg-blue-200 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full">About</a>
         </Link>
-        <Link href="/#projects">
+        <Link href="/#projects" passHref>
           <a className="hover:bg-blue-200 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full">Projects</a>
         </Link>
-        <Link href="/#contact">
-          <button className="hover:bg-blue-200 hover:text-blue-700 transition ease-in-out px-6 py-2 bg-blue-700 text-white font-bold rounded-full">Contact</button>
+        <Link href="/#contact" passHref>
+          <a className="hover:bg-blue-200 hover:text-blue-700 transition ease-in-out px-6 py-2 bg-blue-700 text-white font-bold rounded-full">Contact</a>
         </Link>
       </div>
       <button className="md:hidden" onClick={openModal}>

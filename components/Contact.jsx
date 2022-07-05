@@ -19,12 +19,12 @@ export default function Contact() {
           </div>
           <div className="flex flex-col justify-center items-center">
             <div className="h-12 flex items-center justify-center">
-              <FontAwesomeIcon icon={faEnvelope} className="h-6 text-gray-500" />
-              <div className="ml-2 font-medium text-lg text-gray-500">vbiljon@gmail.com</div>
+              <FontAwesomeIcon icon={faEnvelope} className="h-6 text-gray-600" />
+              <div className="ml-2 font-medium text-lg text-gray-600">vbiljon@gmail.com</div>
             </div>
             <div className="h-12 flex items-center justify-center">
-              <FontAwesomeIcon icon={faPhone} className="h-6 text-gray-500"/>
-              <div className="ml-2 font-medium text-lg text-gray-500">074 7007 4039</div>
+              <FontAwesomeIcon icon={faPhone} className="h-6 text-gray-600"/>
+              <div className="ml-2 font-medium text-lg text-gray-600">074 7007 4039</div>
             </div>
           </div>
           <div className="w-24 hidden md:block"></div>

@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faDownload } from "@fortawesome/free-solid-svg-icons";
 
 import TechnicalSkills from './TechnicalSkills';
 
@@ -26,7 +26,7 @@ export default function About() {
               <li className="ml-6">continuously learn</li>
             </ul>
             <TechnicalSkills />
-            <div className="h-20 mt-4 flex flex-row items-center w-72 justify-around">
+            <div className="h-20 mt-2 flex flex-row items-center w-96 justify-around">
               <a href="https://github.com/jacovb" target="_blank" rel="noreferrer noopener" className="h-16 w-16 border-2 border-black rounded-full flex items-center justify-center hover:border-blue-700 hover:drop-shadow-xl hover:text-blue-700 transition ease-in-out">
                 <FontAwesomeIcon icon={faGithub} className="h-8" />
               </a>
@@ -35,9 +35,15 @@ export default function About() {
                 <FontAwesomeIcon icon={faLinkedin} className="h-8" />
               </a>
 
+              <a href="https://drive.google.com/file/d/1EUidTR5NCwkBD0CW_cyfLnmM_XGobtb9/view?usp=sharing" target="_blank" rel="noreferrer noopener" className="h-16 w-16 border-2 border-black rounded-full flex flex-col items-center justify-center hover:border-blue-700 hover:drop-shadow-xl hover:text-blue-700 transition ease-in-out">
+                <p className="font-bold text-sm" >CV</p>
+                <FontAwesomeIcon icon={faDownload} className="h-4" />
+              </a>
+
               <a href="#contact" className="h-16 w-16 border-2 border-black rounded-full flex items-center justify-center hover:border-blue-700 hover:drop-shadow-xl hover:text-blue-700 transition ease-in-out">
                 <FontAwesomeIcon icon={faEnvelope} className="h-8" />
               </a>
+
             </div>
           </div>
         </div>
