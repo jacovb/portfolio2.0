@@ -23,13 +23,13 @@ export default function Navbar({ pageNum }) {
       </div>
       <div className="hidden md:flex space-x-2 items-center">
         <Link href="/#home" passHref>
-          <a className="hover:bg-blue-200 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full">Home</a>
+          <a className="hover:bg-blue-200 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full font-bold">Home</a>
         </Link>
         <Link href="/#about" passHref>
-          <a className="hover:bg-blue-200 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full">About</a>
+          <a className="hover:bg-blue-200 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full font-bold">About</a>
         </Link>
         <Link href="/#projects" passHref>
-          <a className="hover:bg-blue-200 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full">Projects</a>
+          <a className="hover:bg-blue-200 hover:text-blue-700 transition ease-in-out px-6 py-2 rounded-full font-bold">Projects</a>
         </Link>
         <Link href="/#contact" passHref>
           <a className="hover:bg-blue-200 hover:text-blue-700 transition ease-in-out px-6 py-2 bg-blue-700 text-white font-bold rounded-full">Contact</a>
